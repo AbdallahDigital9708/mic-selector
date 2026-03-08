@@ -2,30 +2,32 @@ name: Build APK
 
 on:
   push:
-    branches: [ main ]
+    branches: [ "main" ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - name: Download project
+        uses: actions/checkout@v4
 
-      - name: Setup Java
-        uses: actions/setup-java@v3
+      - name: Install JDK
+        uses: actions/setup-java@v4
         with:
-          distribution: 'temurin'
-          java-version: '17'
+          distribution: temurin
+          java-version: 17
 
-      - name: Grant permission
-        run: chmod +x gradlew
+      - name: Setup Gradle
+        uses: gradle/gradle-build-action@v2
 
       - name: Build APK
-        run: ./gradlew assembleDebug
+        run: gradle assembleDebug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
+          name: app-debug
+          path: app/build/outputs/apk/debug/app-debug.apk
           name: app-debug
           path: app/build/outputs/apk/debug/app-debug.apk
