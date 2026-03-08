@@ -1,0 +1,10 @@
+{
+  "name": "android-mic-selector",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "echo 'Pure Android Project - No Web Preview Available'"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

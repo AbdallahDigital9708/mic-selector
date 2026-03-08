@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">اختيار الميكروفون</string>
+    <string name="title">اختيار الميكروفون</string>
+    <string name="btn_phone_mic">استخدام مايك الهاتف</string>
+    <string name="btn_headset_mic">استخدام مايك السماعة</string>
+    <string name="status_prefix">الميكروفون الحالي: </string>
+    <string name="status_phone">مايك الهاتف</string>
+    <string name="status_headset">مايك السماعة</string>
+    <string name="status_bluetooth">مايك بلوتوث</string>
+    <string name="headset_not_connected">لم يتم توصيل سماعة</string>
+    <string name="permission_required">يرجى السماح بالوصول إلى الميكروفون لاستخدام التطبيق</string>
+    <string name="switched_to">تم التبديل إلى </string>
+    <string name="failed_switch">فشل التبديل إلى الميكروفون</string>
+    <string name="device_not_found">الجهاز غير موجود</string>
+</resources>

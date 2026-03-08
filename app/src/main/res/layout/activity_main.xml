@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="#F5F5F5"
+    android:layoutDirection="rtl">
+
+    <!-- Title in Arabic -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginBottom="48dp" />
+
+    <!-- Status text in Arabic -->
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/status_prefix"
+        android:textSize="18sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="48dp"
+        android:textAlignment="center" />
+
+    <!-- Button for Phone Microphone -->
+    <Button
+        android:id="@+id/btnPhoneMic"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:text="@string/btn_phone_mic"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF" />
+
+    <!-- Button for Headset Microphone -->
+    <Button
+        android:id="@+id/btnHeadsetMic"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:text="@string/btn_headset_mic"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:enabled="false" />
+
+    <!-- Info text for headset status -->
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/headset_not_connected"
+        android:textSize="14sp"
+        android:textColor="#999999"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

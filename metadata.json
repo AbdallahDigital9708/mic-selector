@@ -1,0 +1,5 @@
+{
+  "name": "Android Mic Selector",
+  "description": "A complete Android Studio project for selecting between built-in and headset microphones using Kotlin.",
+  "requestFramePermissions": ["microphone"]
+}
